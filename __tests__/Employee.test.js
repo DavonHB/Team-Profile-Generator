@@ -21,14 +21,14 @@ test('gets employee name', () => {
 test('gets employee name', () => {
     const employee = new Employee('Davon', 13, 'davonb113@gmail.com');
 
-    expect(employee.getName()).toEqual(expect.any(Number));
+    expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 //gets email from getEmail
 test('gets employee email', () => {
     const employee = new Employee('Davon', 13, 'davonb113@gmail.com');
 
-    expect(employee.getEmail()).toEqual(expect.stringContaining(emplyee.email.toString()));
+    expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
 });
 
 //gets role from getRole()
